@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.x{
+    /* width:200px; */
+
+    padding:20px;
+    /* border: solid 2px yellow; */
+    color: black;
+    margin-top: 10%;
+    background-color: rgb(175, 206, 206);
+    border-radius: 5px;
+    margin: 15px;
+}
+label{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+form{
+    /* height: 95vh; */
+    padding:25px;
+    /* margin: 15px; */
+
+
+}
+.col-sm-3{
+    font-weight: bold;
+}
+.optionshead{
+    text-decoration: underline;
+}
+.hh{
+    display: flex;
+    /* border: 2px solid yellow; */
+   /* align-items: space-between; */
+   justify-content:space-between;
+}
+input[type=text],input[type=password] {
+  color: burlywood;
+  border-radius: 3px;
+  margin: 5px;
+  }
