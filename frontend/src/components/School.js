@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+// import './school.css'
+// import { Link } from 'react-router';
 const School = () => {
   const [zerotofive, setzerotofive]=useState(false);
   const [sixto10, setsixto10]=useState(false);
@@ -8,8 +10,10 @@ const School = () => {
   return (
   
     <div>
-      <form>
-  <div className="school-name">
+      {/* <Link rel="stylesheet" to= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> </Link> */}
+      
+      <form >
+  <div className="inputBox">
     <label for="exampleFormControlInput1">School Name</label>
     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Schoolname"/>
   </div>
@@ -30,10 +34,11 @@ const School = () => {
     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="XYZ"/>
   </div>
   <div className="school-img">
-  <img src="..." className="rounded" alt="..."/>
+  <label for="exampleFormControlInput1">Image for your School</label>
+    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="www.xyz.com"/>
 </div>
 
-<div className="form-group row">
+<div className="addSchoolForm">
             <label className="col-sm-3 col-form-label">Fees Structure</label>
 
             <div className="form-group row">
@@ -132,48 +137,48 @@ const School = () => {
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 2</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 2" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 3</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 3" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 4</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 4" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 5</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 5" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 6</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 6" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 7</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 7" />
 </div>
 
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 8</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 8" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 9</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 9" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 10</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 10" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 11</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 11" />
 </div>
 {/* <label className="col-sm-3 col-form-label">Seat Available in class 12</label> */}
 <div className="col-sm-6">
-  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 1" />
+  <input type="text"  className="form-control" id="msg" name="msg" placeholder="Enter Seats Available in class 12" />
 </div>
 </div>
 
@@ -185,6 +190,7 @@ const School = () => {
     <label for="exampleFormControlInput1">Contact no:</label>
     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="9870654321"/>
   </div>
+  <button className="btn btn-success my-2 btn-lg md-10" >Login</button> 
   </form>
   </div>
   )
