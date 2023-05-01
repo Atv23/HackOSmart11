@@ -20,10 +20,10 @@ const Admin_School = new Schema({
         type:String,
         required:false
     }, 
-    classes:{
-        type:String,
-        required:false
-    },
+    // classes:{
+    //     type:String,
+    //     required:false
+    // },
     fee_upto5 :{
         type:String,
         required:false
@@ -37,6 +37,10 @@ const Admin_School = new Schema({
         required:false
     },
     description:{
+        type:String,
+        required:false
+    },
+    total_seats : {
         type:String,
         required:false
     },
