@@ -45,6 +45,24 @@ router.post("/addSchool", async (req, res) => {
   
 });
 
+router.get("/listSchool",async (req, res) => {
+  try {
+    const result = await School.find({}); //an empty array which will contain all the occurrences of a collection
+    res.json(result);
+  } catch (err) {
+    res.status(401).send("school:" + "not found");
+  }
+});
 
+router.get("/listSchool/:schoolname",async (req, res) => {
+  let schoolname = req.params.schoolname;
+  try {
+    const result = await School.find({ school_name: schoolname }); //an empty array which will contain all the occurrences of a collection
+    res.json(result);
+
+  } catch (err) {
+    res.status(401).send("school:" + "not found");
+  }
+});
 
 module.exports = router;

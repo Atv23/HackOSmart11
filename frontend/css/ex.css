@@ -1,0 +1,62 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  .logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+  }
+  
+  .search {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search input {
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.25rem;
+  }
+  
+  .search button {
+	padding: 0.5rem;
+	background-color: #fff;
+	border: none;
+	border-radius: 0.25rem;
+	margin-left: 0.5rem;
+  }
+  
+  .filters {
+	display: flex;
+	align-items: center;
+  }
+  
+  .filter {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+  }
+  
+  label {
+	margin-right: 0.5rem;
+  }
+  
+  .checkbox {
+	display: flex;
+	align-items: center;
+	margin-left: 0.5rem;
+  }
+  
+  .checkbox label {
+	margin-right: 1rem;
+  }
+  
+  .checkbox input {
+	margin-right: 0.25rem;
+  }
+  
