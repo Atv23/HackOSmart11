@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import './school.css'
 const School = () => {
   const [zerotofive, setzerotofive]=useState(false);
   const [sixto10, setsixto10]=useState(false);
