@@ -1,9 +1,10 @@
 import React from 'react'
+import App1 from '../components/schoolcard/App1'
 
-const AllSchool = () => {
+export const AllSchool = () => {
   return (
     <div>
-      
+      <App1></App1>
     </div>
   )
 }
