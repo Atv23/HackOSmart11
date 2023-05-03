@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:whitesmoke;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  
+}
+.card3
+{ 
+    box-shadow: 0 4px 32px 16px rgba(0, 0, 0, 0.2);
+    margin : 8px;
+
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>We are from Siddaganga Institute of Technology.</p>
+  <p>Eduaction is the most powerful weapon in the world which we can use to change the world.</p>
+</div>
+
+<h2 style="text-align:center">Our Development Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./img/1.jpg" alt="Vaibhav" style="width:100%">
+      <div class="container">
+        <h2>Vaibhav singh</h2>
+        <p class="title">Team member</p>
+        <p>Heyy!! I am Vaibhav Singh ISE 3rd year.I look inocent but you will know me gradually</p>
+        <p>vaibhavmsd39@gmail.com</p>
+        <p><button class="button">Contact no: 9696455572</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="./img/3.jpg" alt="Ashutosh" style="width:100%">
+      <div class="container">
+        <h2>Ashutosh Kamal</h2>
+        <p class="title">Team member</p>
+    <p>Hey!! I am Ashutosh Kamal ISE third year. My hobby is playing with peoples feelings</p>
+        <p>ashutoshjsingh12@gmail.com</p>
+        <p><button class="button">Contact no: 9394335676</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./img/5.jpg" alt="Atarva" style="width:100%">
+      <div class="container">
+        <h2>Atarva  Shukla</h2>
+        <p class="title">Team member</p>
+        <p>Hey!! I am atv ise third year.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact no:7653498971</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column">
+    <div class="card3">
+      <img src="./img/4.jpg" alt="Varun" style="width:100%","height="100%">
+      <div class="container">
+        <h2>Varun kumar singh</h2>
+        <p class="title">Designer</p>
+        <p>Hey!! I am Varun kumar singh ISE third year.</p>
+        <p>varunkumarsingh2024@gmail.com</p>
+        <p><button class="button">Contact no: 8447284770</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="column">
+    <div class="card">
+      <img src="./img/2.jpg" alt="rishabh" style="width:100%">
+      <div class="container">
+        <h2>Rishabh Kanth</h2>
+        <p class="title">Team member</p>
+        <p>Hey!! I am rishabh ECE third year.I am web developer
+            
+        </p>
+        <p>rishabhkanth200@gmail.com</p>
+        <p><button class="button">Contact no: 7665732566</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
