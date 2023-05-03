@@ -2,8 +2,13 @@ import React from "react";
 import Avatar from "./Avatar";
 import './styles.css'
 function Card(props) {
+  const id=props.id;
+  
+const VisitSchool=()=>{
+    window.location=`/schools/${id}`;
+}
   return (
-    <div>
+    <div onClick={VisitSchool}>
       <div className="card">
         <div className="top">
           <h2 className="name">{props.name}</h2>

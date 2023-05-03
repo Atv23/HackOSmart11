@@ -6,6 +6,8 @@ import School from './components/School'
 // import data from './data'
 // import { useState,useRef,useEffect } from 'react';
 import AllSchool from './components/AllSchool';
+import SchoolDetails from './components/SchoolDetails'
+
 // import axios from 'axios' 
 // function CreateCard() {
 //   const [data, setData]=useState([]);
@@ -53,7 +55,7 @@ function App() {
       <header className="App-header">
        <School></School>
       <AllSchool></AllSchool>
-       {/* <SchoolDetails></SchoolDetails> */}
+       <SchoolDetails></SchoolDetails>
        {/* <College></College> */}
        {/* <App></App> */}
       </header>

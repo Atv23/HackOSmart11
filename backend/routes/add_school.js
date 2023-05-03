@@ -54,10 +54,10 @@ router.get("/listSchool",async (req, res) => {
   }
 });
 
-router.get("/listSchool/:schoolname",async (req, res) => {
-  let schoolname = req.params.schoolname;
+router.get("/listSchool/:id",async (req, res) => {
+  let id = req.params._id;
   try {
-    const result = await School.find({ school_name: schoolname }); //an empty array which will contain all the occurrences of a collection
+    const result = await School.find(ObjectId(id)); //an empty array which will contain all the occurrences of a collection
     res.json(result);
 
   } catch (err) {

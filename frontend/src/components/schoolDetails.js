@@ -8,7 +8,7 @@ const SchoolDetails = () => {
   const[schoolname,setSchoolName] = useState("");
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/add/listSchool/${name}`)
+      .get(`http://localhost:5000/api/add/listSchool`)
       .then((response) => {
         console.log(response.data[1]);
         setSchoolData(response.data);

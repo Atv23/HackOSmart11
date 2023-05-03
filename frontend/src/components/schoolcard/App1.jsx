@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import Contacts from './Contacts';
+import Contacts from './data';
+import axios from 'axios';
 
-function createCard(Contacts) {
-  return (
-    <Card
-      key={Contacts.id}
-      name={Contacts.name}
-      img={Contacts.imgURL}
-      fees = {Contacts.fees}
-      type = {Contacts.type}
-      board = {Contacts.board}
-      grade= {Contacts.grade}
-      add = {Contacts.address}
-    />
-  );
-}
 
 function App1() {
+  const [allSchools,setAllSchools]=useState([]);
+  useEffect(()=>{
+    const fetchData=async()=>{
+      const data=await axios.get('http://localhost:5000/api/add/listSchool');
+      // console.log("Allschools ",data);
+      setAllSchools(data.data);
+    }
+fetchData();
+  },[])
   return (
     <div>
       <h1 className="heading">School List</h1>
-      {Contacts.map(createCard)};
+      {allSchools.map((data,key)=>{
+           return  (
+            <Card
+            key={key}
+            id={data._id}
+            name={data.school_name}
+            img={data.imgURL}
+            fees = {data.fees}
+            type = {data.type}
+            board = {data.board}
+            grade= {data.grade}
+            add = {data.address}
+            />
+                      )
+      })};
+  
     </div>
   );
 }
