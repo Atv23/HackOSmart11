@@ -7,6 +7,13 @@ import School from './components/School'
 // import { useState,useRef,useEffect } from 'react';
 import AllSchool from './components/AllSchool';
 import SchoolDetails from './components/SchoolDetails'
+import {
+  BrowserRouter as Router,
+  Route,
+  useParams,
+  Routes
+} from "react-router-dom";
+
 
 // import axios from 'axios' 
 // function CreateCard() {
@@ -51,17 +58,20 @@ import SchoolDetails from './components/SchoolDetails'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <School></School>
-      <AllSchool></AllSchool>
-       <SchoolDetails></SchoolDetails>
+    <>
+    <Router>
+      <School></School>
+     <Routes>
+      <Route Component={SchoolDetails} path={'/schools/:id'}/>
+      <Route Component={AllSchool} path={'/'}/>
+
+       {/* <SchoolDetails></SchoolDetails> */}
        {/* <College></College> */}
        {/* <App></App> */}
-      </header>
-     
-    </div>
-    
+       
+     </Routes>
+   </Router>,
+   </>
   );
 }
 export default App;

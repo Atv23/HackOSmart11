@@ -33,7 +33,7 @@ router.post("/addSchool", async (req, res) => {
     seats_available_class10:req.body.seats_available_class10,
     seats_available_class11:req.body.seats_available_class11,
     seats_available_class12:req.body.seats_available_class12,
-
+      
       contact:req.body.contact,
       pic_link:req.body.pic_link
   });
@@ -55,9 +55,10 @@ router.get("/listSchool",async (req, res) => {
 });
 
 router.get("/listSchool/:id",async (req, res) => {
-  let id = req.params._id;
+  // let id = req.params.school_name
+  console.log(req.params.id);
   try {
-    const result = await School.find(ObjectId(id)); //an empty array which will contain all the occurrences of a collection
+    const result = await School.findById(req.params.id); //an empty array which will contain all the occurrences of a collection
     res.json(result);
 
   } catch (err) {
