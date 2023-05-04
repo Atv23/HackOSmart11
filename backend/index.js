@@ -34,6 +34,7 @@ mongoose.connect(DB,{
 app.use('/api/auth',require('./routes/auth_user'))
 app.use('/api/auth1',require('./routes/auth_institute'))
 app.use('/api/add',require('./routes/add_school'))
+app.use('/api/addRev',require('./routes/reviews'))
 app.use('/api/add1',require('./routes/add_college'))
 
 
