@@ -12,9 +12,14 @@
         border-color: grey;
         border-style: none;
         border-top-style: dotted;
-        margin-left:550px;
+        margin-left:600px;
+        align-items: center;
         border-width:8px;
         width: 30%;
+    }
+    .navcolor{
+      background-color: #7df2f0; 
+      border-radius: 20%;
     }
 </style>
 <body>
@@ -53,7 +58,7 @@
         </div>
     </div>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class=" navcolor navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="#schoolinfo">About School</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -100,11 +105,107 @@
           <hr>
           <div id="seat" class="abt">
             <h3 class="schlinfo">Seats Availability</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Seats Available</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="class-header" colspan="2">Primary School</td>
+                </tr>
+                <tr>
+                  <td>Class 1</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>Class 2</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>Class 3</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>Class 4</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>Class 5</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                    <td class="class-header" colspan="2">Secondary School</td>
+                  </tr>
+                <tr>
+                  <td>Class 6</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Class 7</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>Class 8</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>Class 9</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>Class 10</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td class="class-header" colspan="2">Pre-University School</td>
+                </tr>
+                <tr>
+                  <td>Class 11</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Class 12</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <hr>
           <div id="fee" class="abt">
-            <h3 class="schlinfo">Fee Structure</h3>
-            <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur ipsum neque impedit, illum doloribus quia magnam provident quibusdam error quidem voluptates eaque quaerat laboriosam beatae molestias facere quo fuga, nihil aperiam nemo earum vitae magni. Et hic, iure sint similique dolore harum, quibusdam facilis eligendi, vero culpa accusamus possimus.</p>
+            <h3 class="schlinfo">School Fee Structure</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Admission Fee</th>
+                  <th>Tuition Fee (per month)</th>
+                  <th>Other Fee</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="icon class1">&#x1F393;</span> Class 1-5</td>
+                  <td>Rs. 10,000</td>
+                  <td>Rs. 2,000</td>
+                  <td>Rs. 1,000</td>
+                </tr>
+                <tr>
+                  <td><span class="icon class6">&#x1F393;</span> Class 6-10</td>
+                  <td>Rs. 10,000</td>
+                  <td>Rs. 2,000</td>
+                  <td>Rs. 1,000</td>
+                </tr>
+                <tr>
+                  <td><span class="icon class11">&#x1F393;</span> Class 11-12</td>
+                  <td>Rs. 10,000</td>
+                  <td>Rs. 2,000</td>
+                  <td>Rs. 1,000</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <hr>
           <div id="fac" class="abt">
@@ -114,9 +215,55 @@
             </button>
           </div>
           <hr>
+          <div id="fac" class="abt">
+            <h3 class="schlinfo">Achievements</h3>
+	             <div class="container">
+	             	<div class="card">
+	             		<img src="https://via.placeholder.com/350x150" alt="Achievement Image">
+	             		<h2>Science Fair Winner</h2>
+	             		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non vestibulum lectus. Sed varius eget lectus quis sodales. Donec placerat mollis est. Fusce mattis tortor id eros semper, nec bibendum ipsum fringilla. Sed ut urna libero.</p>
+	             		<p><strong>Date:</strong> 25th May, 2021</p>
+	             		<p><strong>Award:</strong> First Place</p>
+	             	</div>
+	             	<div class="card">
+	             		<img src="https://via.placeholder.com/350x150" alt="Achievement Image">
+	             		<h2>Math Olympiad Finalist</h2>
+	             		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non vestibulum lectus. Sed varius eget lectus quis sodales. Donec placerat mollis est. Fusce mattis tortor id eros semper, nec bibendum ipsum fringilla. Sed ut urna libero.</p>
+	             		<p><strong>Date:</strong> 5th June, 2021</p>
+	             		<p><strong>Award:</strong> Finalist</p>
+	             	</div>
+	             	<div class="card">
+	             		<img src="https://via.placeholder.com/350x150" alt="Achievement Image">
+	             		<h2>Debate Competition Winner</h2>
+	             		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non vestibulum lectus. Sed varius eget lectus quis sodales. Donec placerat mollis est. Fusce mattis tortor id eros semper, nec bibendum ipsum fringilla. Sed ut urna libero.</p>
+	             		<p><strong>Date:</strong> 15th July, 2021</p>
+	             		<p><strong>Award:</strong> Best Speaker</p>
+	             	</div>
+              </div>
+          </div>
+          <hr>
           <div id="cont" class="abt">
             <h3 class="schlinfo">Contact Us</h3><br>
-            <p class="abc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsam dolorem hic nesciunt dolores laborum, voluptates accusantium? Neque aliquid accusantium enim animi, nam labore soluta accusamus aperiam voluptas, sunt eum, dolore nobis. Deleniti suscipit quas sequi sed reprehenderit earum, ullam, ducimus, aut nostrum eos reiciendis doloremque facilis eveniet incidunt nulla.</p>
+            <form class="formcont">
+              <h2>User Query Form</h2>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="query">Query:</label>
+              <textarea id="query" name="query" required></textarea>
+              <input style="margin-top: 3%" type="submit" value="Submit">
+            </form>
+            <div class="mno">
+              <p class="cntc">Or Contact Us at: </p>
+              <p>&#x260E; +1 (123) 456-7890</p>
+              <p>&#x2709; example@example.com</p>
+            </div>
           </div>
           <hr>
           <div id="rev" class="abt">
