@@ -1,21 +1,79 @@
 
-import './App.css';
+// import './App.css';
 import School from './components/School'
-<<<<<<< HEAD
-import College from './components/College'
-import SchoolDetails from './components/SchoolDetails';
-=======
->>>>>>> 4e902564833bb07a5c680b8b0f167070f89add72
+// import App from './components/schoolcard/App';
+// import Card from './components/schoolcard/Card';
+// import data from './data'
+// import { useState,useRef,useEffect } from 'react';
+import AllSchool from './components/AllSchool';
+import SchoolDetails from './components/SchoolDetails'
+import {
+  BrowserRouter as Router,
+  Route,
+  useParams,
+  Routes
+} from "react-router-dom";
+
+
+// import axios from 'axios' 
+// function CreateCard() {
+//   const [data, setData]=useState([]);
+
+//   useEffect(() => {
+//     axios
+//       .get(`http://localhost:5000/api/add/listSchool`)
+//       .then((response) => {
+//         // console.log(response.data[1].stadium_owned[0].stadium_name);
+//         setData(response.data);
+//         // console.log(data);
+//       });
+//   }, []);
+// const x = data
+
+//   const ref = useRef(null);
+//   return (
+//     <Card
+//       key={x._id}
+//       name={x.name}
+//       img={x.imgURL}
+//       fees = {x.fees}
+//       type = {x.type}
+//       board = {x.board}
+//       grade= {x.grade}
+//       add = {x.address}
+//     />
+//   );
+// }
+
+// function App1(){
+//   return (
+//     <div>
+//       <h1 className="heading">School List</h1>
+//       {x.map((x1) => (
+// {x1.map(CreateCard)}
+//   ))}
+//     </div>
+//   );
+// }
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <School></School>
-       <SchoolDetails></SchoolDetails>
+    <>
+    <Router>
+      <School></School>
+     <Routes>
+      <Route Component={SchoolDetails} path={'/schools/:id'}/>
+      <Route Component={AllSchool} path={'/'}/>
+
+       {/* <SchoolDetails></SchoolDetails> */}
        {/* <College></College> */}
-      </header>
-    </div>
+       {/* <App></App> */}
+       
+     </Routes>
+   </Router>,
+   </>
   );
 }
-
 export default App;
+// export {App1};
+// export default {App,App1};

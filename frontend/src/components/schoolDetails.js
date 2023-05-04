@@ -1,20 +1,23 @@
 import React ,{useRef} from 'react'
 import { useState,useEffect } from 'react';
 import './schooldetails.css'
+import { useParams } from 'react-router-dom'
 import axios from "axios";
 
 const SchoolDetails = () => {
-  const [schoolData, setSchoolData] = useState([]);
-  const[schoolname,setSchoolName] = useState("");
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/add/listSchool/${name}`)
-      .then((response) => {
-        console.log(response.data[1]);
-        setSchoolData(response.data);
-      });
-  }, []);
-
+  const {id} = useParams();
+    const [schoolDetails,setSchooldetails]=useState({});
+    useEffect(() => {
+      // console.log("ID of the school",id);
+   
+      axios
+        .get(`http://localhost:5000/api/add/listSchool/${id}`)
+        .then((response) => {
+          setSchooldetails(response.data);
+          console.log("Scools data =>",response.data);
+          console.log("Scools data =>",response.data.fee_upto5);
+        });
+    }, []);
 
   const ref = useRef(null);
   const updateNote = async (e) => {
@@ -62,12 +65,13 @@ const SchoolDetails = () => {
 
         <div>
           <span>Annual Fees</span>
-          {schoolData.map(school => <span>{school.fee_upto5}</span>)}
-          
+          {/* {schoolDetails.map((school) => (<span>{school.fee_upto5}</span>))} */}
+          <span>{schoolDetails.fee_upto5  }</span>
         </div>
         <div>
           <span>School Board</span>
-          {schoolData.map(school => <span>{school.type}</span>)}
+          {/* {schoolData.map(school => <span>{school.type}</span>)} */}
+          axax
         </div>
         <div>
           <span>School Type</span>
