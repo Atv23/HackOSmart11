@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import axios from "axios";
-// import './school.css'
-// import { Link } from 'react-router';
+import './school.css'
+import axios from 'axios'
 const School = () => {
   const [zerotofive, setzerotofive]=useState(false);
   const [sixto10, setsixto10]=useState(false);
