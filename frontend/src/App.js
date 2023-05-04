@@ -59,8 +59,9 @@ import {
 function App() {
   return (
     <>
+    <School></School>
     <Router>
-      <School></School>
+      
      <Routes>
       <Route Component={SchoolDetails} path={'/schools/:id'}/>
       <Route Component={AllSchool} path={'/'}/>
