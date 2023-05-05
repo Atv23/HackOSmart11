@@ -3,8 +3,10 @@
 import School from "./components/School";
 import AllSchool from './components/AllSchool';
 import SchoolDetails from './components/SchoolDetails'
-
-
+// import Register from "./components/register_admin";
+import Login from "./components/login_admin";
+import admin_option from "./components/admin_option";
+import Navbar from "./components/Navbar";
 // import './App.css';
 // import School from './components/School'
 // import App from './components/schoolcard/App';
@@ -66,16 +68,19 @@ import {
 function App() {
   return (
     <>
+    
       
     {/* <SchoolDetails></SchoolDetails>
     <New></New> */}
     <Router>
-      
+    <Navbar></Navbar>
      <Routes>
-      <Route Component={SchoolDetails} path={'/schools/:id'}/>
-      <Route Component={AllSchool} path={'/'}/>
-      {/* <Route Component={New} path={'/form'}/> */}
-
+      {/* <Route Component={SchoolDetails} path={'/schools/:id'}/> */}
+      {/* <Route Component={AllSchool} path={'/'}/> */}
+      {/* <Route Component={Register} path={'/'}/> */}
+      <Route Component={School} path={'/addschool'}/>
+      <Route Component={Login} path={'/'}/>
+      <Route Component={admin_option} path={'/adminoption'}/>
        {/* <SchoolDetails></SchoolDetails> */}
        {/* <College></College> */}
        {/* <App></App> */}
