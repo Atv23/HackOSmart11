@@ -1,7 +1,72 @@
+<<<<<<< HEAD
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.x{
+    width:48vw;
+
+    padding:10px;
+    /* width: auto; */
+    /* border: solid 2px yellow; */
+    color: black;
+    margin-top: 1%;
+    background-color: rgb(175, 206, 206);
+    border-radius: 5px;
+    /* margin: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+label{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+form{
+    /* height: 95vh; */
+    padding:10px;
+    margin: 15px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+.col-sm-3{
+    font-weight: bold;
+}
+.optionshead{
+    text-decoration: underline;
+}
+.hh{
+    display: flex;
+    /* border: 2px solid yellow; */
+   /* align-items: space-between; */
+   padding: 5px;
+   justify-content:space-between;
+}
+input[type=text],input[type=password] {
+  color: burlywood;
+  border-radius: 3px;
+  width: 450px;
+  margin: 2px;
+  padding: 2px;
+  border: none;
+  }
+=======
 /* .ee{
     color: aquamarine;
 } */
+<<<<<<< HEAD
 .edit{
     width: 100%;
     display: flex;
 }
+=======
+>>>>>>> 4fafc891b07ebb08b1d7ea2f4d2b4c05cacd3e53
+>>>>>>> a33f36e7380c26b7162851c3be4c99c636e34c65
