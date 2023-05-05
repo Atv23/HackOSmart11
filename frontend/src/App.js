@@ -7,6 +7,8 @@ import School from './components/School'
 // import { useState,useRef,useEffect } from 'react';
 import AllSchool from './components/AllSchool';
 import SchoolDetails from './components/SchoolDetails'
+// import New from './components/New';
+// import './main.css'
 import {
   BrowserRouter as Router,
   Route,
@@ -58,21 +60,23 @@ import {
 
 function App() {
   return (
-    <>
-    <School></School>
+    <div>
+      
+    {/* <SchoolDetails></SchoolDetails>
+    <New></New> */}
     <Router>
       
      <Routes>
       <Route Component={SchoolDetails} path={'/schools/:id'}/>
       <Route Component={AllSchool} path={'/'}/>
+      {/* <Route Component={New} path={'/form'}/> */}
 
        {/* <SchoolDetails></SchoolDetails> */}
        {/* <College></College> */}
        {/* <App></App> */}
-       
-     </Routes>
-   </Router>,
-   </>
+</Routes>
+</Router>
+    </div>
   );
 }
 export default App;

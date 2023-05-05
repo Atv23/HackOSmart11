@@ -1,3 +1,7 @@
 /* .ee{
     color: aquamarine;
 } */
+.edit{
+    width: 100%;
+    display: flex;
+}
