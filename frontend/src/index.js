@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import './index.css';
@@ -5,9 +6,24 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+=======
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// import './index.css';
+import App from './App';
+// import App1 from './App'
+import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+const root = ReactDOM.createRoot(document.getElementById('root'));
+>>>>>>> 4fafc891b07ebb08b1d7ea2f4d2b4c05cacd3e53
 root.render(
   <React.StrictMode>
     <App />
+    {/* <App1/> */}
   </React.StrictMode>
 );
 

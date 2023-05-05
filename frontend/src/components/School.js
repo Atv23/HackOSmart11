@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React from "react";
 import { useState } from "react";
 import "./school.css";
 
+=======
+import React from 'react'
+import { useState } from 'react';
+import './school.css'
+import axios from 'axios'
+>>>>>>> 4fafc891b07ebb08b1d7ea2f4d2b4c05cacd3e53
 const School = () => {
   const [zerotofive, setzerotofive] = useState(false);
   const [sixto10, setsixto10] = useState(false);

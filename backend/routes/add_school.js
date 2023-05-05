@@ -33,7 +33,7 @@ router.post("/addSchool", async (req, res) => {
     seats_available_class10:req.body.seats_available_class10,
     seats_available_class11:req.body.seats_available_class11,
     seats_available_class12:req.body.seats_available_class12,
-
+      
       contact:req.body.contact,
       pic_link:req.body.pic_link
   });
@@ -45,6 +45,25 @@ router.post("/addSchool", async (req, res) => {
   
 });
 
+router.get("/listSchool",async (req, res) => {
+  try {
+    const result = await School.find({}); //an empty array which will contain all the occurrences of a collection
+    res.json(result);
+  } catch (err) {
+    res.status(401).send("school:" + "not found");
+  }
+});
 
+router.get("/listSchool/:id",async (req, res) => {
+  // let id = req.params.school_name
+  console.log(req.params.id);
+  try {
+    const result = await School.findById(req.params.id); //an empty array which will contain all the occurrences of a collection
+    res.json(result);
+
+  } catch (err) {
+    res.status(401).send("school:" + "not found");
+  }
+});
 
 module.exports = router;
