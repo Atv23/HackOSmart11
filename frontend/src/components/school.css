@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     background-color: rgb(255, 255, 255);
 }
 .x{
@@ -58,15 +56,9 @@ input[type=text],input[type=password] {
   padding: 2px;
   border: none;
   }
-=======
+
 /* .ee{
     color: aquamarine;
 } */
-<<<<<<< HEAD
-.edit{
-    width: 100%;
-    display: flex;
-}
-=======
->>>>>>> 4fafc891b07ebb08b1d7ea2f4d2b4c05cacd3e53
->>>>>>> a33f36e7380c26b7162851c3be4c99c636e34c65
+
+

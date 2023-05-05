@@ -1,24 +1,17 @@
-<<<<<<< HEAD
-// import './App.css';
-import School from "./components/School";
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <School></School>
-        {/* <College></College> */}
-      </header>
-    </div>
-=======
 
 // import './App.css';
-import School from './components/School'
+import School from "./components/School";
+import AllSchool from './components/AllSchool';
+import SchoolDetails from './components/SchoolDetails'
+
+
+// import './App.css';
+// import School from './components/School'
 // import App from './components/schoolcard/App';
 // import Card from './components/schoolcard/Card';
 // import data from './data'
 // import { useState,useRef,useEffect } from 'react';
-import AllSchool from './components/AllSchool';
-import SchoolDetails from './components/SchoolDetails'
+
 // import New from './components/New';
 // import './main.css'
 import {
@@ -72,7 +65,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <>
       
     {/* <SchoolDetails></SchoolDetails>
     <New></New> */}
@@ -86,17 +79,11 @@ function App() {
        {/* <SchoolDetails></SchoolDetails> */}
        {/* <College></College> */}
        {/* <App></App> */}
-<<<<<<< HEAD
-</Routes>
-</Router>
-    </div>
-=======
        
      </Routes>
    </Router>,
    </>
->>>>>>> 4fafc891b07ebb08b1d7ea2f4d2b4c05cacd3e53
->>>>>>> a33f36e7380c26b7162851c3be4c99c636e34c65
+
   );
 }
 export default App;

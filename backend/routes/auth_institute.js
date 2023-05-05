@@ -9,7 +9,7 @@ const { findOne } = require('../models/User');
 const JWT_secret = "Vaibhav@2110"
 const fetchuser = require('../middleware/fetchuser')
 //route 1 create_user
-router.post('/createinstitute',[
+router.post('/createAdmin',[
 
     //checks using express validator
 
@@ -33,15 +33,14 @@ router.post('/createinstitute',[
     const salt = bcrypt.genSaltSync(10);
     const securepass = bcrypt.hashSync(req.body.password, salt);
     let institute = await Institute.create({
-    Institution_name: req.body.Institution_name,
-    InstituteID:req.body.InstituteID,
+    name: req.body.name,
     email:req.body.email,
-      password: securepass
+    password: securepass
     //   type_of_user:req.body.type_of_user
     });
     const data= {
       institute:{
-        id:institute.id
+        email:institute.email
         
       }
     }
@@ -52,7 +51,7 @@ router.post('/createinstitute',[
 
 
 //route 2: authenticate using provided credentials
-router.post('/loginInstitute',[
+router.post('/loginAdmin',[
 
   //checks using express validator
 
@@ -87,10 +86,9 @@ router.post('/loginInstitute',[
 
     const data= {
       institute:{
-        id:institute.id,
-        Institution_name: institute.Institution_name,
-        InstituteID:institute.InstituteID,
-        email:institute.email
+        name: institute.name,
+        email:institute.email,
+        // email:institute.email
         // type_of_user:user.type_of_user
       }
     }
