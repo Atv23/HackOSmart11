@@ -5,15 +5,20 @@ body{
     background-color: rgb(255, 255, 255);
 }
 .x{
-    /* width:200px; */
+    width:48vw;
 
-    padding:20px;
+    padding:10px;
+    /* width: auto; */
     /* border: solid 2px yellow; */
     color: black;
-    margin-top: 10%;
+    margin-top: 1%;
     background-color: rgb(175, 206, 206);
     border-radius: 5px;
-    margin: 15px;
+    /* margin: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
 }
 label{
     text-align: center;
@@ -23,9 +28,12 @@ label{
 
 form{
     /* height: 95vh; */
-    padding:25px;
-    /* margin: 15px; */
-
+    padding:10px;
+    margin: 15px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 
 }
 .col-sm-3{
@@ -38,10 +46,14 @@ form{
     display: flex;
     /* border: 2px solid yellow; */
    /* align-items: space-between; */
+   padding: 5px;
    justify-content:space-between;
 }
 input[type=text],input[type=password] {
   color: burlywood;
   border-radius: 3px;
-  margin: 5px;
+  width: 450px;
+  margin: 2px;
+  padding: 2px;
+  border: none;
   }

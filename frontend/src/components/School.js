@@ -208,7 +208,7 @@ const School = () => {
           />
         </div>
         <div className="form-group row hh">
-          <label className="col-sm-3 col-form-label">Seat Availability: </label>
+          <label className="col-sm-3 col-form-label">Seat Availability:</label>
           <div className="col-sm-2 mt-2">
             Update{" "}
             <input

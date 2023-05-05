@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import School from './components/School'
-import College from './components/College'
+// import './App.css';
+import School from "./components/School";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <School></School>
-       {/* <College></College> */}
+        <School></School>
+        {/* <College></College> */}
       </header>
     </div>
   );
