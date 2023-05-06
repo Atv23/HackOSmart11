@@ -2,11 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const InstituteSchema = new Schema({
     
-    Institution_name:{
-        type:String,
-        required:true
-    },
-    InstituteID:{
+    name:{
         type:String,
         required:true
     },

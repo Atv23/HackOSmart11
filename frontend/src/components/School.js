@@ -75,7 +75,7 @@ const School = () => {
       console.log(err);
       alert("error");
     }
-    // window.location="/admin"
+    window.location="/adminoption"
   };
 
   return (

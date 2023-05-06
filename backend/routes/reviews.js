@@ -15,6 +15,7 @@ router.post("/addReview", async (req, res) => {
 
     try{
         const reviews = new Reviews({
+          school:req.body.school,
             email: req.body.email,
             user_review: [
               {
@@ -36,7 +37,18 @@ router.post("/addReview", async (req, res) => {
 
 router.get("/listreviews",async (req, res) => {
   try {
-    const result = await Reviews.find({}); //an empty array which will contain all the occurrences of a collection
+    // const school = req.body.school
+    const result = await Reviews.find(); //an empty array which will contain all the occurrences of a collection
+    res.json(result);
+  } catch (err) {
+    res.status(401).send("review:" + "not found");
+  }
+});
+
+router.get("/listreviews/:school",async (req, res) => {
+  try {
+    const school = req.params.school
+    const result = await Reviews.find({school:school}); //an empty array which will contain all the occurrences of a collection
     res.json(result);
   } catch (err) {
     res.status(401).send("review:" + "not found");
