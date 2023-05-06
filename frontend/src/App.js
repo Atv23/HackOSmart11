@@ -7,6 +7,8 @@ import SchoolDetails from './components/SchoolDetails'
 import Login from "./components/login_admin";
 import admin_option from "./components/admin_option";
 import Navbar from "./components/Navbar";
+import user_option from "./components/user_option";
+import All_college from "./components/All_college";
 // import './App.css';
 // import School from './components/School'
 // import App from './components/schoolcard/App';
@@ -22,6 +24,8 @@ import {
   useParams,
   Routes
 } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import Register from "./components/register_admin";
 
 
 // import axios from 'axios' 
@@ -69,23 +73,31 @@ function App() {
   return (
     <>
     
-      
-    {/* <SchoolDetails></SchoolDetails>
-    <New></New> */}
+      {/* <SchoolDetails></SchoolDetails> */}
+    {/* {/* <SchoolDetails></SchoolDetails> */}
+    {/* <New></New> */} 
+    
+
     <Router>
-    <Navbar></Navbar>
+    
+    {/* <Navbar></Navbar> */}
      <Routes>
-      {/* <Route Component={SchoolDetails} path={'/schools/:id'}/> */}
-      {/* <Route Component={AllSchool} path={'/'}/> */}
+      <Route Component={SchoolDetails} path={'/schools/:id'}/>
+      <Route Component={AllSchool} path={'/user'}/> 
+      <Route Component={HomePage} path={'/'}/>
+      <Route Component={Login} path={'/login'}/>
+      <Route Component={Register} path={'/register'}/>
+
       {/* <Route Component={Register} path={'/'}/> */}
       <Route Component={School} path={'/addschool'}/>
-      <Route Component={Login} path={'/'}/>
+      {/* <Route Component={Login} path={'/'}/> */}
       <Route Component={admin_option} path={'/adminoption'}/>
-       {/* <SchoolDetails></SchoolDetails> */}
+      <Route Component={user_option} path={'/user_option'}/>
+      <Route Component={All_college} path={'/user1'}/>
        {/* <College></College> */}
        {/* <App></App> */}
        
-     </Routes>
+    </Routes>
    </Router>,
    </>
 

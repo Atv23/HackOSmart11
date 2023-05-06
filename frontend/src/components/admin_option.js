@@ -1,5 +1,5 @@
 import React from 'react'
-
+import xy from './1.jpg'
 const admin_option = () => {
     const handleClick =()=>{
         window.location = '/addschool'
@@ -53,7 +53,7 @@ const admin_option = () => {
 
 
     <div className="contai">
-      <img src="1.jpg"alt="" />
+      <img src={xy}alt="" />
 
       <button className="button" onClick={handleClick}>Add School</button>
 

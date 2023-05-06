@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
-import Contacts from './data';
+import Card from "./Card2";
+// import Contacts from './data';
 import axios from 'axios';
 
 
-function App1() {
+function App2() {
   const [allSchools,setAllSchools]=useState([]);
   useEffect(()=>{
     const fetchData=async()=>{
@@ -16,7 +16,7 @@ fetchData();
   },[])
   return (
     <div>
-      <h1 className="heading">School List</h1>
+      <h1 className="heading">College List</h1>
       {allSchools.map((data,key)=>{
            return  (
             <Card
@@ -36,4 +36,4 @@ fetchData();
   );
 }
 
-export default App1;
+export default App2;

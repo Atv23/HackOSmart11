@@ -1,11 +1,12 @@
 import React from "react";
-import Avatar from "./Avatar";
+import Avatar2 from "./Avatar2";
 // import './styles.module.css'
-function Card(props) {
+function Card2(props) {
   const id=props.id;
   
 const VisitSchool=()=>{
-    window.location=`/schools/${id}`;
+    window.location.href = '';
+    // <a href="1.html ">Visit W3Schools</a>
 }
   return (
     <>
@@ -90,7 +91,7 @@ const VisitSchool=()=>{
       <div className="card">
         <div className="top">
           <h2 className="name">{props.name}</h2>
-          <Avatar img={props.img} />
+          <Avatar2 img={props.img} />
         </div>
         <div className="bottom">
         <h3 className="info"> Fees = {props.fees} </h3> 
@@ -105,4 +106,4 @@ const VisitSchool=()=>{
   );
 }
 
-export default Card;
+export default Card2;

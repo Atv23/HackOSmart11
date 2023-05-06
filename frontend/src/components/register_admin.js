@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useState } from "react";
-import './register.css'
+// import './register.css'
 import axios from 'axios';
 // import main from '../HOME/main.jpg'
 export default function Register() {
@@ -47,6 +47,83 @@ export default function Register() {
 
   return (
 <>
+<style>
+      {`
+      body
+      {
+          margin: 0;
+          padding: 0;
+          background-color:black;
+          font-family: 'Arial';
+      }
+      .login{
+              width: 382px;
+              overflow: hidden;
+              margin: auto;
+              margin: 20 0 0 450px;
+              padding: 80px;
+              margin-top:100px;
+              background: #1de9b6;
+              border-radius: 15px ;
+      
+      }
+      h2{
+          text-align: center;
+          color: #277582;
+          padding: 20px;
+      }
+      label{
+          color: black;
+          font-size: 17px;
+      }
+      #Uname{
+          color: black;
+          width: 300px;
+          height: 30px;
+          border: none;
+          border-radius: 3px;
+          padding-left: 8px;
+      }
+      #Pass{
+          color: black;
+          width: 300px;
+          height: 30px;
+          border: none;
+          border-radius: 3px;
+          padding-left: 8px;
+      
+      }
+      #log{
+          border: snow;
+          border-radius: 40px;
+          color: black;
+        background-color:#949797;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      
+      }
+      #log:hover{
+          background-color: rgb(46, 140, 240);
+      
+      }
+      span{
+          color: white;
+          font-size: 17px;
+      }
+      a{
+          float: right;
+          // background-color: white;
+      }
+      
+          </style>
+      `}
+      
+    </style>
 
       <form onSubmit={handleSubmit} className="register">
         <h2>Register</h2>

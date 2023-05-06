@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import './school.css'
+// import './school.css'
 import axios from 'axios'
 const School = () => {
   const [zerotofive, setzerotofive]=useState(false);
@@ -82,7 +82,75 @@ const School = () => {
   
     <div>
       {/* <Link rel="stylesheet" to= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> </Link> */}
+<style>
+  {`
+  
+body{
+    
+  background-color: rgb(255, 255, 255);
+}
+.x{
+  width:48vw;
 
+  padding:10px;
+  /* width: auto; */
+  /* border: solid 2px yellow; */
+  color: black;
+  margin-top: 1%;
+  background-color: rgb(175, 206, 206);
+  border-radius: 5px;
+  /* margin: 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+label{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+form{
+  /* height: 95vh; */
+  padding:10px;
+  margin: 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+}
+.col-sm-3{
+  font-weight: bold;
+}
+.optionshead{
+  text-decoration: underline;
+}
+.hh{
+  display: flex;
+  /* border: 2px solid yellow; */
+ /* align-items: space-between; */
+ padding: 5px;
+ justify-content:space-between;
+}
+input[type=text],input[type=password] {
+color: burlywood;
+border-radius: 3px;
+width: 450px;
+margin: 2px;
+padding: 2px;
+border: none;
+}
+
+/* .ee{
+  color: aquamarine;
+} */
+
+
+
+  `}
+</style>
       <form onSubmit= {handleSubmit}>
   <div className="inputBox">
     <label for="exampleFormControlInput1">School Name</label>
