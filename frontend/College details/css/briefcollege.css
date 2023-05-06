@@ -11,9 +11,6 @@ hr{
     border-width:8px;
     width: 10%;
 }
-.nav{
-  display: flex;
-}
 .schoolname{
   color: white;
 }
@@ -21,28 +18,30 @@ hr{
   color: white;
 }
 .basic_info{
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.card1 {
   color: white;
-  box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
-  max-width: 1400px;
-  margin: auto;
-  margin-bottom: 30px;
-  text-align: left;
 }
-.school-img{
-  width: 1400px;
-  height: 250px;
-  margin: auto;
-  margin-bottom: 20px;
-  /* margin-top: 20px; */
-}
-
-
+.basic_info{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .card1 {
+    color: white;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .school-img{
+    width: 1400px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+  }
+  
 .btn1{
     border: snow;
     border-radius: 40px;
@@ -60,16 +59,15 @@ hr{
   background-color: rgb(32, 234, 217);
 }
 .logo{
-  height:40px;    
-  margin-top: 30px;
-  /* display: flex;
-  float:left; */
-  /* margin-bottom: -5px; */
-  border: solid;
-    border-color: #1de9b6;
-    border-radius: 15px;
-}
-
+    height:40px;    
+    margin-top: 30px;
+    /* display: flex;
+    float:left; */
+    /* margin-bottom: -5px; */
+    border: solid;
+      border-color: #1de9b6;
+      border-radius: 15px;
+  }
 .facilitybtn{
     border-radius: 20px;
     margin-left:20px;
@@ -81,25 +79,28 @@ hr{
   border-width: 5px;
 }
 .log{
-  /* display: flex;
-  float: right; */
-  margin-left: 1350px;
-  margin-top: -35px;
-  padding-bottom: 50px;
+    /* display: flex;
+    float: right; */
+    margin-left: 1350px;
+    margin-top: -35px;
+    padding-bottom: 50px;
+  }
+  
+  .sch-name{
+    display: flex;
+    margin-left: 40px;
+  }
+  .location{
+    display: flex;
+  }
+  .map{
+    width: 200px;
+    margin-left: 900px;
+  }
+.nav{
+    display: flex;
+    
 }
-
-.sch-name{
-  display: flex;
-  margin-left: 40px;
-}
-.location{
-  display: flex;
-}
-.map{
-  width: 200px;
-  margin-left: 900px;
-}
-
 .abt{
     background-color: #a4a7a8 ;
     border: solid;
@@ -117,11 +118,10 @@ hr{
     margin-bottom:20px;
 }
 .schlinfo{
-  text-align: center;
-  margin-left:10px;
-  margin-top:5px;
+    /* margin-left:680px; */
+    text-align: center;
+    margin-top:5px;
 }
-
 table {
     font-family: Arial, sans-serif;
     border-collapse: collapse;
@@ -132,7 +132,18 @@ table {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-
+.plc{
+width:100%;
+margin-top: 80px;
+margin-right: 35px;
+margin-bottom: 20px;
+}
+.flexing{
+     display: flex;
+}
+.companies{
+    margin-top: 30px;
+}
   th {
     background-color: #1de9b6;
     color: #fff;
@@ -160,6 +171,7 @@ table {
     background-color: #757575;
     color: #fff;
     font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 10px;
@@ -236,14 +248,6 @@ table {
         color: #fffdfd;
         cursor: pointer;
       }
-
-.add{
-  margin-top: 10px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
       .abcd:hover,
       .abcd:hover ~ label,
       .star-rating:checked ~ label {
@@ -386,4 +390,16 @@ table {
     }
     .usrnm{
       text-align: center;
+    }
+    .plcimg{
+        height: 400px;
+        width: 450px;
+        margin-bottom: 20px;
+        border: solid;
+        border-color: #333;
+    }
+    .plcimg:hover{
+        border-color: #1de9b6;
+        border-radius: 10px;
+        border-width: 10px;
     }
