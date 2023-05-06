@@ -109,7 +109,7 @@ router.post('/loginAdmin',[
 router.post('/getuser',fetchuser,async(req,res)=>{
   
 try {
-  instituteId = req.institute.id;
+  instituteemail = req.institute.email;
   const institute = await Institute.findById(instituteId).select('-password')
   res.send(institute)
 } catch (error) {
