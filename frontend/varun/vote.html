@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/javascript" src="vote.js"></script> -->
+<!--PERSONAL SCRIPT JavaScript-->
+<style>
+  /* Style the upvote and downvote buttons */
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Style the upvote button */
+  #upvote-button {
+    color: green;
+  }
+  
+  /* Style the downvote button */
+  #downvote-button {
+    color: red;
+  }
+  
+  /* Style the vote count elements */
+  p {
+    margin: 10px 0;
+  }
+  
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+    <button id="upvote-button">Upvote</button>
+    <button id="downvote-button">Downvote</button>
+<script>
+    let upvoteCount = 0;
+let downvoteCount = 0;
+
+document.getElementById("upvote-button").addEventListener("click", function() {
+  upvoteCount++;
+  document.getElementById("upvote-count").textContent = upvoteCount;
+});
+
+document.getElementById("downvote-button").addEventListener("click", function() {
+  downvoteCount++;
+  document.getElementById("downvote-count").textContent = downvoteCount;
+});
+
+</script>
+    
+</body>
+</html>

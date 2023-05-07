@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+}
+
+.btn{
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn span{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  width: 240px;
+  padding: 18px 0;
+  margin: 35px;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  transition: transform 0.15s linear;
+}
+
+.color-01 span{
+  background: linear-gradient(90deg, #EC5C1A, #F6CE61);
+}
+
+.color-02 span{
+  background: linear-gradient(90deg, #0165CD, #55E6FB);
+}
+
+.color-03 span{
+  background: linear-gradient(90deg, #259844, #6FF192);
+}
+
+h1{
+  color: #222;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.8em;
+  font-weight: 800;
+}
+    </style>
+ 
+
+    <h1>Knowtify Tumkur</h1>
+
+    <a href="#" class="btn color-01">
+      <span>ADD SCHOOL</span>
+    </a>
+    <a href="#" class="btn color-02">
+      <span>ADD COLLEGE</span>
+    </a>
+    <a href="#" class="btn color-03">
+      <span>Read More</span>
+    </a>
+
+    <script type="text/javascript">
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mousemove", function(e){
+        const position = btn.getBoundingClientRect();
+        const x = e.pageX - position.left - position.width / 2;
+        const y = e.pageY - position.top - position.height / 2;
+
+        btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
+      });
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseout", function(e){
+        btn.children[0].style.transform = "translate(0px, 0px)";
+      });
+    });
+    </script>
+
+    
+</body>
+</html>
