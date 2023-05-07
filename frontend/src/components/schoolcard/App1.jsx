@@ -23,11 +23,10 @@ fetchData();
             key={key}
             id={data._id}
             name={data.school_name}
-            img={data.imgURL}
-            fees = {data.fees}
-            type = {data.type}
-            board = {data.board}
-            grade= {data.grade}
+            img={data.pic_link}
+            fees = {data.fee_upto10}
+            type = {data.affiliation}
+            board = {data.type}
             add = {data.address}
             />
                       )

@@ -1,18 +1,31 @@
 
 // import './App.css';
-import School from './components/School'
+import School from "./components/School";
+import AllSchool from './components/AllSchool';
+import SchoolDetails from './components/SchoolDetails'
+// import Register from "./components/register_admin";
+import Login from "./components/login_admin";
+import admin_option from "./components/admin_option";
+import Navbar from "./components/Navbar";
+import user_option from "./components/user_option";
+import All_college from "./components/All_college";
+// import './App.css';
+// import School from './components/School'
 // import App from './components/schoolcard/App';
 // import Card from './components/schoolcard/Card';
 // import data from './data'
 // import { useState,useRef,useEffect } from 'react';
-import AllSchool from './components/AllSchool';
-import SchoolDetails from './components/SchoolDetails'
+
+// import New from './components/New';
+// import './main.css'
 import {
   BrowserRouter as Router,
   Route,
   useParams,
   Routes
 } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import Register from "./components/register_admin";
 
 
 // import axios from 'axios' 
@@ -59,19 +72,35 @@ import {
 function App() {
   return (
     <>
+    
+      {/* <SchoolDetails></SchoolDetails> */}
+    {/* {/* <SchoolDetails></SchoolDetails> */}
+    {/* <New></New> */} 
+    
+
     <Router>
-      <School></School>
+    
+    {/* <Navbar></Navbar> */}
      <Routes>
       <Route Component={SchoolDetails} path={'/schools/:id'}/>
-      <Route Component={AllSchool} path={'/'}/>
+      <Route Component={AllSchool} path={'/user'}/> 
+      <Route Component={HomePage} path={'/'}/>
+      <Route Component={Login} path={'/login'}/>
+      <Route Component={Register} path={'/register'}/>
 
-       {/* <SchoolDetails></SchoolDetails> */}
+      {/* <Route Component={Register} path={'/'}/> */}
+      <Route Component={School} path={'/addschool'}/>
+      {/* <Route Component={Login} path={'/'}/> */}
+      <Route Component={admin_option} path={'/adminoption'}/>
+      <Route Component={user_option} path={'/user_option'}/>
+      <Route Component={All_college} path={'/user1'}/>
        {/* <College></College> */}
        {/* <App></App> */}
        
-     </Routes>
+    </Routes>
    </Router>,
    </>
+
   );
 }
 export default App;

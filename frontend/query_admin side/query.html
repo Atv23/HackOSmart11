@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Query Data</title>
+    <style>
+      /* Style the table */
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      th {
+        background-color: #1de9b6;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #e3e3e3;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>User Query Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Query</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- User query data will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <script>
+      const userQueries = [
+        // Assume this is an array of objects containing user query data
+        {
+          name: "John Doe",
+          phone: "123-456-7890",
+          email: "johndoe@example.com",
+          query: "How can I reset my password?",
+        },
+        {
+          name: "Jane Smith",
+          phone: "555-555-1212",
+          email: "janesmith@example.com",
+          query: "What is your return policy?",
+        },
+        // ...add more objects as needed
+      ];
+
+      const tableBody = document.querySelector("#table-body");
+
+      // Loop through the userQueries array and create a new table row for each object
+      for (let i = 0; i < userQueries.length; i++) {
+        const newRow = document.createElement("tr");
+        const nameCell = document.createElement("td");
+        const phoneCell = document.createElement("td");
+        const emailCell = document.createElement("td");
+        const queryCell = document.createElement("td");
+
+        nameCell.textContent = userQueries[i].name;
+        phoneCell.textContent = userQueries[i].phone;
+        emailCell.textContent = userQueries[i].email;
+        queryCell.textContent = userQueries[i].query;
+
+        newRow.appendChild(nameCell);
+        newRow.appendChild(phoneCell);
+        newRow.appendChild(emailCell);
+        newRow.appendChild(queryCell);
+
+        tableBody.appendChild(newRow);
+      }
+    </script>
+  </body>
+</html>
